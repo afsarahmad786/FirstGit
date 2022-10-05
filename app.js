@@ -1,109 +1,157 @@
-// document.title = 123;
-// var headerTitle = document.getElementById("header-title");
-// headerTitle.style.borderBottom = "solid 3px #000";
+// // document.title = 123;
+// // var headerTitle = document.getElementById("header-title");
+// // headerTitle.style.borderBottom = "solid 3px #000";
 
-// var item = document.getElementById("itemss");
-// item.style.fontWeight = "bold";
-// item.style.backgroundColor = "green";
+// // var item = document.getElementById("itemss");
+// // item.style.fontWeight = "bold";
+// // item.style.backgroundColor = "green";
 
-// // var it = document.getElementsByClassName("list-group-item");
-// // it[1].style.fontWeight = "bold";
-// // it[0].style.fontWeight = "bold";
-// // it[2].style.fontWeight = "bold";
-// // it[3].style.fontWeight = "bold";
+// // // var it = document.getElementsByClassName("list-group-item");
+// // // it[1].style.fontWeight = "bold";
+// // // it[0].style.fontWeight = "bold";
+// // // it[2].style.fontWeight = "bold";
+// // // it[3].style.fontWeight = "bold";
 
-// // var li = document.getElementsByTagName("li");
-// // li[1].style.fontWeight = "bold";
-// // li[0].style.fontWeight = "bold";
-// // li[2].style.fontWeight = "bold";
-// // li[3].style.fontWeight = "bold";
+// // // var li = document.getElementsByTagName("li");
+// // // li[1].style.fontWeight = "bold";
+// // // li[0].style.fontWeight = "bold";
+// // // li[2].style.fontWeight = "bold";
+// // // li[3].style.fontWeight = "bold";
 
-// // for (var i = 0; i < li.length; i++) {
-// //   li[i].style.backgroundColor = "#f4f4f4";
+// // // for (var i = 0; i < li.length; i++) {
+// // //   li[i].style.backgroundColor = "#f4f4f4";
+// // // }
+
+// // var header = document.querySelector("#main-header");
+// // header.style.borderBottom = "solid 4px #ccc";
+
+// // var input = document.querySelector("input");
+// // input.value = "Helo Wold";
+
+// // var item = document.querySelector(".list-group-item");
+// // item.style.color = "red";
+// // var last = document.querySelector(".list-group-item:nth-child(2)");
+// // last.style.color = "green";
+// // var last = document.querySelector(".list-group-item:nth-child(3)");
+// // last.style.display = "none";
+
+// // // querysselectorall
+// // var titles = document.querySelectorAll(".title");
+// // console.log(titles);
+// // titles[0].textContent = "Hello";
+
+// // var odd = document.querySelectorAll("li:nth-child(odd");
+// // for (var i = 0; i < odd.length; i++) {
+// //   odd[i].style.backgroundColor = "#f4f4f4";
 // // }
 
-// var header = document.querySelector("#main-header");
-// header.style.borderBottom = "solid 4px #ccc";
+// var itemList = document.querySelector("#items");
+// // parentNode
+// // console.log(itemList.parentNode);
+// // itemList.parentNode.style.backgroundColor = "#f4f4f4";
 
-// var input = document.querySelector("input");
-// input.value = "Helo Wold";
+// // // parentElement
+// // console.log(itemList.parentElement);
+// // itemList.parentElement.style.backgroundColor = "#f4f4f4";
+// // console.log(itemList.parentElement.parentElement.parentElement);
 
-// var item = document.querySelector(".list-group-item");
-// item.style.color = "red";
-// var last = document.querySelector(".list-group-item:nth-child(2)");
-// last.style.color = "green";
-// var last = document.querySelector(".list-group-item:nth-child(3)");
-// last.style.display = "none";
+// // console.log(itemList.children);
+// // console.log(itemList.children[1]);
+// // itemList.children[1].style.backgroundColor = "yellow";
 
-// // querysselectorall
-// var titles = document.querySelectorAll(".title");
-// console.log(titles);
-// titles[0].textContent = "Hello";
+// // // FirstChild
+// // console.log(itemList.firstChild);
+// // // firstElementChild
+// // console.log(itemList.firstElementChild);
+// // itemList.firstElementChild.textContent = "Hello 1";
 
-// var odd = document.querySelectorAll("li:nth-child(odd");
-// for (var i = 0; i < odd.length; i++) {
-//   odd[i].style.backgroundColor = "#f4f4f4";
-// }
+// // lastChild
+// // console.log(itemList.lastChild);
+// // lastElementChild;
+// // console.log(itemList.lastElementChild);
+// // itemList.lastElementChild.textContent = "Hello 4";
 
-var itemList = document.querySelector("#items");
-// parentNode
-// console.log(itemList.parentNode);
-// itemList.parentNode.style.backgroundColor = "#f4f4f4";
+// // nextSibling
+// // console.log(itemList.nextSibling);
+// // // nextElementSibling
+// // console.log(itemList.nextElementSibling);
 
-// // parentElement
-// console.log(itemList.parentElement);
-// itemList.parentElement.style.backgroundColor = "#f4f4f4";
-// console.log(itemList.parentElement.parentElement.parentElement);
+// // previousSibling
+// // console.log(itemList.previousSibling);
+// // // previousElementSibling;
+// // console.log(itemList.previousElementSibling);
+// // itemList.previousElementSibling.style.color = "green";
 
-// console.log(itemList.children);
-// console.log(itemList.children[1]);
-// itemList.children[1].style.backgroundColor = "yellow";
+// // Create a div
+// var newDiv = document.createElement("div");
 
-// // FirstChild
-// console.log(itemList.firstChild);
-// // firstElementChild
-// console.log(itemList.firstElementChild);
-// itemList.firstElementChild.textContent = "Hello 1";
+// // Add class
+// newDiv.className = "hello";
 
-// lastChild
-// console.log(itemList.lastChild);
-// lastElementChild;
-// console.log(itemList.lastElementChild);
-// itemList.lastElementChild.textContent = "Hello 4";
+// // Add id
+// newDiv.id = "hello1";
 
-// nextSibling
-// console.log(itemList.nextSibling);
-// // nextElementSibling
-// console.log(itemList.nextElementSibling);
+// // Add attr
+// newDiv.setAttribute("title", "Hello Div");
 
-// previousSibling
-// console.log(itemList.previousSibling);
-// // previousElementSibling;
-// console.log(itemList.previousElementSibling);
-// itemList.previousElementSibling.style.color = "green";
+// // Create text node
+// var newDivText = document.createTextNode("Hello World");
 
-// Create a div
-var newDiv = document.createElement("div");
+// newDiv.appendChild(newDivText);
 
-// Add class
-newDiv.className = "hello";
+// var container = document.querySelector("header .container");
+// var h1 = document.querySelector("header h1");
 
-// Add id
-newDiv.id = "hello1";
+// console.log(newDiv);
 
-// Add attr
-newDiv.setAttribute("title", "Hello Div");
+// newDiv.style.fontSize = "30px";
 
-// Create text node
-var newDivText = document.createTextNode("Hello World");
+// container.insertBefore(newDiv, h1);
+// a
 
-newDiv.appendChild(newDivText);
+var form = document.getElementById("addForm");
+var itemList = document.getElementById("items");
+var filter = document.getElementById("filter");
 
-var container = document.querySelector("header .container");
-var h1 = document.querySelector("header h1");
+form.addEventListener("submit", addItem);
+itemList.addEventListener("click", removeItem);
+// Filter event
+filter.addEventListener("keyup", filterItems);
 
-console.log(newDiv);
+function addItem(e) {
+  e.preventDefault();
+  var newItem = document.getElementById("item").value;
+  var li = document.createElement("li");
+  li.className = "list-group-item";
+  li.appendChild(document.createTextNode(newItem));
 
-newDiv.style.fontSize = "30px";
+  var deleteBtn = document.createElement("button");
+  deleteBtn.className = "btn btn-danger btn-sm float-right delete";
+  deleteBtn.appendChild(document.createTextNode("X"));
+  li.appendChild(deleteBtn);
 
-container.insertBefore(newDiv, h1);
+  itemList.appendChild(li);
+  console.log(li);
+}
+
+function removeItem(e) {
+  if (e.target.classList.contains("delete")) {
+    if (confirm("Are You Sure?")) {
+      var li = e.target.parentElement;
+      itemList.removeChild(li);
+    }
+  }
+}
+
+function filterItems(e) {
+  var text = e.target.value.toLowerCase();
+  var items = itemList.getElementsByTagName("li");
+  Array.from(items).forEach(function (item) {
+    var itemName = item.firstChild.textContent;
+    if (itemName.toLowerCase().indexOf(text) != -1) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
