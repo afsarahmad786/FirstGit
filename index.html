@@ -58,6 +58,19 @@
         </ul>
       </div>
     </div>
-    <script src="app.js"></script>
+    <script>
+      let myobj = { name: "Afsar", age: 50 };
+      let myobj_serialize = JSON.stringify(myobj);
+      console.log(myobj_serialize);
+      localStorage.setItem("myobj", myobj_serialize);
+      let myobj_deserialize = JSON.parse(myobj_serialize);
+      console.log(myobj_deserialize);
+      let myobj2 = { name: "Ahmad", age: 50 };
+      let myobj_serialize2 = JSON.stringify(myobj2);
+      console.log(myobj_serialize);
+      localStorage.setItem("myobj", myobj_serialize2);
+      let myobj_deserialize2 = JSON.parse(myobj_serialize2);
+      console.log(myobj_deserialize2);
+    </script>
   </body>
 </html>
