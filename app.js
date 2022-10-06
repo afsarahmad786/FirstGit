@@ -120,9 +120,11 @@ filter.addEventListener("keyup", filterItems);
 
 function addItem(e) {
   e.preventDefault();
+
   var newItem = document.getElementById("item").value;
   var li = document.createElement("li");
   li.className = "list-group-item";
+
   li.appendChild(document.createTextNode(newItem));
 
   var deleteBtn = document.createElement("button");
@@ -131,6 +133,8 @@ function addItem(e) {
   li.appendChild(deleteBtn);
 
   itemList.appendChild(li);
+  localStorage.setItem(li, newItem);
+  console.log(localStorage.getItem(li));
   console.log(li);
 }
 
