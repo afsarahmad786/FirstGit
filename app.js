@@ -136,6 +136,9 @@ function addItem(e) {
   localStorage.setItem(li, newItem);
   console.log(localStorage.getItem(li));
   console.log(li);
+  const item = e.target.item.value;
+  const myobj = { item };
+  localStorage.setItem(myobj.item, JSON.stringify(myobj));
 }
 
 function removeItem(e) {
